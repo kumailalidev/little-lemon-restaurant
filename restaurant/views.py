@@ -26,7 +26,7 @@ def menu_item(request, pk=None):
     return render(request, "restaurant/menu_item.html", {"menu_item": menu_item})
 
 
-def booking(request):
+def book(request):
     form = BookingForm()
 
     if request.method == "POST":
