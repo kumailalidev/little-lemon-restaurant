@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import get_object_or_404, render
 from .models import Menu
 
 
@@ -17,3 +17,9 @@ def menu(request):
     }
 
     return render(request, "restaurant/menu.html", context)
+
+
+def menu_item(request, pk=None):
+    menu_item = get_object_or_404(Menu, pk=pk)
+
+    return render(request, "restaurant/menu_item.html", {"menu_item": menu_item})
