@@ -1,0 +1,29 @@
+{% extends './base.html' %}
+{% load static %}
+{% block content %}
+    <section>
+        <article>
+            <h1>Menu item</h1>
+            <span>
+                <a href="{% url 'home' %}">Home</a>&#47;
+                <a href="{% url 'menu' %}">Menu</a>&#47;
+                {{ menu_item.name }}
+            </span>
+            <!-- Menu item -->
+            <div class="">
+                <!-- Item description -->
+                <div class="">
+                    <h2>{{ menu_item.name|title }}</h2>
+                    <p>{{ menu_item.menu_item_description }}</p>
+                    <p>Price: ${{ menu_item.price }}.00</p>
+                </div>
+                <!-- Item image -->
+                <div class="">
+                    <!-- TODO: Fix the image file names -->
+                    <img src="/restaurant/static/img/menu_items/{{ menu_item.name|title|slice:":1"|upper }}{{ menu_item.name|slice:"1:" }}.jpg"
+                         alt="{{ menu_item.name|title|slice:":1"|upper }}{{ menu_item.name|slice:"1:" }}">
+                </div>
+            </div>
+        </article>
+    </section>
+{% endblock %}
