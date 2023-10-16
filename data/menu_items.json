@@ -1,0 +1,22 @@
+[
+  {
+    "name": "greek salad",
+    "price": 12.0,
+    "description": "Our famous Greek salad of crispy lettuce, peppers, olives, and our Chicago-style feta cheese. Garnished with crispy onion and salty capers."
+  },
+  {
+    "name": "grilled fish",
+    "price": 9.0,
+    "description": "Savor the exquisite flavors of our expertly grilled fish, a culinary masterpiece that's both healthy and indulgent. Our fresh catch of the day is marinated in a secret blend of herbs and spices, then seared to perfection on the grill, resulting in tender, flaky, and flavorful fish that's sure to tantalize your taste buds. Accompanied by a side of your choice and served with a zesty citrus drizzle, this dish is a delectable embodiment of seaside dining at its finest."
+  },
+  {
+    "name": "bruschetta",
+    "price": 11.0,
+    "description": "Indulge in the classic Italian appetizer that's bursting with vibrant, fresh flavors. Our Bruschetta features slices of toasted artisan bread, lovingly rubbed with garlic and topped with a medley of ripe, diced tomatoes, garden-fresh basil, extra-virgin olive oil, and a hint of balsamic glaze. Each bite offers a harmonious blend of crisp, garlicky goodness and the natural sweetness of the tomatoes. Perfect for sharing or enjoying as a prelude to your meal, our Bruschetta is a delightful, palate-pleasing experience that captures the essence of Italy."
+  },
+  {
+    "name": "lemon dessert",
+    "price": 7.0,
+    "description": "Brighten your day with our zesty and refreshing Lemon Dessert. It's a citrus-infused masterpiece that's the perfect ending to any meal. Our velvety lemon-infused creation combines the tartness of fresh lemons with a touch of sweetness, resulting in a harmonious and tantalizing treat. Topped with a delicate lemon zest garnish and served with a dollop of whipped cream, this dessert is a burst of sunshine on your plate, sure to leave your taste buds dancing with delight."
+  }
+]
