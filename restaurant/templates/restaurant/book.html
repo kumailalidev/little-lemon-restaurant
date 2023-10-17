@@ -1,6 +1,5 @@
 {% extends './base.html' %}
 {% load static %}
-
 {% block content %}
     <section>
         <article>
@@ -9,26 +8,44 @@
             <div class="">
                 <!-- Booking form -->
                 <div class="">
-                    <form action="" method="post" id="form">
+                    <form method="post" id="form">
+                        <!-- Name of reserve -->
                         <p>
                             <label for="first_name">Name:</label>
-                            <input type="text" placeholder="Your Name" maxlength="200" required>
+                            <input type="text"
+                                   id="first_name"
+                                   placeholder="Your Name"
+                                   maxlength="200"
+                                   required>
                         </p>
+                        <!-- Reservation date -->
                         <p>
-                            <label for="reservation_slot">Reservation date:</label>
+                            <label for="reservation_date">Reservation date:</label>
+                            <input type="date"
+                                   id="reservation_date"
+                                   placeholder="Reservation Date"
+                                   required>
+                        </p>
+                        <!-- Reservation slot (time) -->
+                        <p>
+                            <label for="reservation_slot">Reservation time:</label>
                             <select name="reservation_slot" id="reservation_slot">
                                 <option value="0" disabled>Select time</option>
                             </select>
                         </p>
-                        {% csrf_token %}
                         <button type="button" id="button">Reserve</button>
                     </form>
                 </div>
                 <!-- Bookings -->
                 <div class="">
-                    <h2>Bookings for <span id="today"></span></h2>
+                    <h2>
+                        Bookings for <span id="today"></span>
+                    </h2>
+                    <div id="bookings">Hello World</div>
                 </div>
             </div>
         </article>
     </section>
+    <!-- JavaScript file -->
+    <script defer src="{% static 'js/book.js' %}"></script>
 {% endblock %}

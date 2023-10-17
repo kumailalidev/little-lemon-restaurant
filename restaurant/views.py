@@ -62,7 +62,7 @@ def bookings(request):
         # returns True if QuerySet exists else returns False
         exist = (
             Booking.objects.filter(reservation_date=data["reservation_date"])
-            .filter(reservation_slot=["reservation_slot"])
+            .filter(reservation_slot=data["reservation_slot"])
             .exists()
         )
         # create a booking if there is empty slot else return error.
