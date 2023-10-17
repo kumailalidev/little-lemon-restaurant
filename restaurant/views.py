@@ -88,3 +88,14 @@ def bookings(request):
 
     # return HTTP response contains JSON object.
     return HttpResponse(booking_json, content_type="application/json")
+
+
+def reservations(request):
+    # TODO: filter reservations based on current date
+    bookings = Booking.objects.all()
+    bookings_json = serializers.serialize("json", bookings)
+    context = {
+        "bookings": bookings,
+    }
+
+    return render(request, "restaurant/bookings.html", context)
