@@ -37,4 +37,4 @@ def book(request):
         "form": form,
     }
 
-    return render(request, "restaurant/booking.html", context)
+    return render(request, "restaurant/book.html", context)

@@ -1,0 +1,34 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block content %}
+    <section>
+        <article>
+            <h1>Make a reservation</h1>
+            <!-- Bookings and reservations -->
+            <div class="">
+                <!-- Booking form -->
+                <div class="">
+                    <form action="" method="post" id="form">
+                        <p>
+                            <label for="first_name">Name:</label>
+                            <input type="text" placeholder="Your Name" maxlength="200" required>
+                        </p>
+                        <p>
+                            <label for="reservation_slot">Reservation date:</label>
+                            <select name="reservation_slot" id="reservation_slot">
+                                <option value="0" disabled>Select time</option>
+                            </select>
+                        </p>
+                        {% csrf_token %}
+                        <button type="button" id="button">Reserve</button>
+                    </form>
+                </div>
+                <!-- Bookings -->
+                <div class="">
+                    <h2>Bookings for <span id="today"></span></h2>
+                </div>
+            </div>
+        </article>
+    </section>
+{% endblock %}
