@@ -95,7 +95,7 @@ def reservations(request):
     bookings = Booking.objects.all()
     bookings_json = serializers.serialize("json", bookings)
     context = {
-        "bookings": bookings,
+        "bookings": bookings_json,
     }
 
     return render(request, "restaurant/bookings.html", context)
