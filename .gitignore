@@ -3,6 +3,7 @@
 .venv/
 __pycache__/
 migrations/
+etc/
 
 # Files
 .DS_Store
