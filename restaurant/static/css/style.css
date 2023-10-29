@@ -180,6 +180,12 @@ select {
     margin: 1rem;
 }
 
+.cta:hover {
+    color: #fff;
+    background-color: #495E57;
+    border: 3px solid #495E57;
+}
+
 .heading-shadow {
     text-shadow: 1px 1px 4px #333333;
 }
