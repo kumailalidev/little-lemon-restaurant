@@ -134,3 +134,17 @@ select {
     line-height: 1.5rem;
     box-sizing: border-box;
 }
+
+/* Reserve button */
+
+#button {
+    padding: .5rem 1rem;
+    border: 1px solid #495E57;
+    background-color: #495E57;
+    border-radius: 5px;
+    width: 80%;
+    font-size: 1.25rem;
+    display: block;
+    color: #fff;
+    line-height: 25px;
+}
