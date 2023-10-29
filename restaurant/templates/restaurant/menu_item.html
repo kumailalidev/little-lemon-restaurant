@@ -7,7 +7,7 @@
             <span>
                 <a href="{% url 'home' %}">Home</a>&#47;
                 <a href="{% url 'menu' %}">Menu</a>&#47;
-                {{ menu_item.name }}
+                {{ menu_item.name|title }}
             </span>
             <!-- Menu item -->
             <div class="row">
@@ -20,8 +20,8 @@
                 <!-- Item image -->
                 <div class="column">
                     <!-- TODO: Fix the image file names -->
-                    <img src="/restaurant/static/img/menu_items/{{ menu_item.name|title|slice:":1"|upper }}{{ menu_item.name|slice:"1:" }}.jpg"
-                         alt="{{ menu_item.name|title|slice:":1"|upper }}{{ menu_item.name|slice:"1:" }}">
+                    <img src="/static/img/menu_items/{{ menu_item.name }}.jpg"
+                         alt="{{ menu_item.name|title }}">
                 </div>
             </div>
         </article>
