@@ -213,3 +213,22 @@ footer p {
     text-align: right;
     padding-top: 1rem;
 }
+
+/* row and column classes used in about.html, menu_item.html and bookings.html*/
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.column {
+    flex-basis: 50%;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.column figure {
+    padding: 0px 12px;
+}
