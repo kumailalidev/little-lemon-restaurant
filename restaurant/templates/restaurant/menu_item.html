@@ -10,15 +10,15 @@
                 {{ menu_item.name }}
             </span>
             <!-- Menu item -->
-            <div class="">
+            <div class="row">
                 <!-- Item description -->
-                <div class="">
+                <div class="column">
                     <h2>{{ menu_item.name|title }}</h2>
                     <p>{{ menu_item.menu_item_description }}</p>
                     <p>Price: ${{ menu_item.price }}.00</p>
                 </div>
                 <!-- Item image -->
-                <div class="">
+                <div class="column">
                     <!-- TODO: Fix the image file names -->
                     <img src="/restaurant/static/img/menu_items/{{ menu_item.name|title|slice:":1"|upper }}{{ menu_item.name|slice:"1:" }}.jpg"
                          alt="{{ menu_item.name|title|slice:":1"|upper }}{{ menu_item.name|slice:"1:" }}">
