@@ -112,3 +112,25 @@ main article {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+/* figure and label tags (used in about.html) */
+
+figure {
+    margin: 0;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+/* input and select tags (used in book.html) */
+
+input,
+select {
+    width: 80%;
+    display: block;
+    padding: .5rem 1rem;
+    line-height: 1.5rem;
+    box-sizing: border-box;
+}
